@@ -1,4 +1,4 @@
-package com.goertek.runningtest
+package com.goertek.runningtest.main
 
 import android.app.Application
 import android.content.Context
