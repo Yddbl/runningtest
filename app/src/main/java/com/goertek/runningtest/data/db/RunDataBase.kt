@@ -1,6 +1,6 @@
 package com.goertek.runningtest.data.db
 
-class RunDataBase {
+object RunDataBase {
 
     private var mainDao: MainDao? = null
 
