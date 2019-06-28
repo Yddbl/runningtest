@@ -1,9 +1,10 @@
 package com.goertek.runningtest.data.db
 
 import com.goertek.runningtest.data.model.ProjectTestResult
+import com.goertek.runningtest.main.BaseDao
 import org.litepal.LitePal
 
-class MainDao {
+class MainDao : BaseDao() {
 
     /**
      * 获取所有project的测试结果
@@ -18,5 +19,5 @@ class MainDao {
             LitePal.saveAll(results)
         }
     }
-    
+
 }

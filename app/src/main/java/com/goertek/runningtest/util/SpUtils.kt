@@ -34,6 +34,10 @@ object SpUtils {
         Log.d(TAG, "putInt: $value")
     }
 
+    fun getInt(spFileName:String,key:String):Int {
+        return App.context.getSharedPreferences(spFileName,Context.MODE_PRIVATE).getInt(key,-1)
+    }
+
     fun putLong(spFileName: String,key: String,value:Long){
         App.context.getSharedPreferences(spFileName,Context.MODE_PRIVATE).edit{
             putLong(key,value)
